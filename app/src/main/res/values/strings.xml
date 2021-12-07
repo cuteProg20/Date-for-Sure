@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Date for Sure</string>
+    <string name="welcome">WELCOME</string>
+    <string name="log_in">LOG IN</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="register_here"><u>Register Here</u></string>
+    <string name="reset_password"><u>Reset Password?</u></string>
+    <string name="sign_up_using">Or Sign Up using</string>
 </resources>
