@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="ui.MainActivity"
     android:background="@drawable/ic_background_sign">
 
     <LinearLayout
@@ -30,20 +30,20 @@
             android:text="@string/welcome"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="26sp"
             tools:ignore="TextContrastCheck"
             tools:layout_editor_absoluteX="194dp"
             tools:layout_editor_absoluteY="167dp" />
 
         <TextView
             android:id="@+id/login"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/log_in"
             android:layout_gravity="center"
             android:textAlignment="center"
             tools:ignore="TextContrastCheck"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textColor="@color/white"
             android:fontFamily="@font/robotoregular"
             android:letterSpacing="0.15"
@@ -56,7 +56,8 @@
             android:layout_marginTop="168dp"
             android:autofillHints="username"
             android:background="@drawable/input_rectable"
-            android:drawableStart="@drawable/ic_username"
+            android:drawableStart="@drawable/ic_username2"
+            android:drawablePadding="20dp"
             android:ems="10"
             android:hint="@string/username"
             android:inputType="textEmailAddress"
@@ -73,6 +74,7 @@
             android:layout_marginTop="26dp"
             android:background="@drawable/input_rectable"
             android:drawableStart="@drawable/ic_password_lock"
+            android:drawablePadding="20dp"
             android:ems="10"
             android:hint="@string/password"
             android:importantForAutofill="no"
@@ -117,6 +119,7 @@
             android:layout_width="149dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
+            android:textSize="16sp"
             android:layout_marginTop="43dp"
             android:background="@drawable/btn_rectangle"
             android:text="@string/login" />
@@ -130,6 +133,26 @@
             android:text="@string/sign_up_using"
             android:textColor="@color/faint_color"
             android:textSize="11sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_google"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:src="@drawable/ic_facebook"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
