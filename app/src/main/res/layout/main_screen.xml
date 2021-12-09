@@ -11,6 +11,9 @@
 
 <!--    End of Top Navigation Included-->
 
+
+
+
 <!--    Fragment Layout -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
@@ -20,6 +23,9 @@
         app:layout_constraintStart_toStartOf="parent" />
 <!--    End of Fragment Layout-->
 
+
+
+
 <!--    Bottom navigation layout include-->
     <include
         android:id="@+id/bottomNav"
@@ -27,4 +33,7 @@
         tools:layout_editor_absoluteY="645dp" />
 
 <!--    End of bottom Navigation Layout Include-->
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

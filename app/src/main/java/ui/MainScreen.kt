@@ -1,14 +1,16 @@
 package ui
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.DisplayMetrics
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.dateforsure.R
+import com.example.dateforsure.fragments.ChatFragment
+import com.example.dateforsure.fragments.ExploreFragment
+import com.example.dateforsure.fragments.GroupsFragment
+import com.example.dateforsure.fragments.ProfileFragment
+import kotlinx.android.synthetic.main.bottom_nav.*
+
 
 class MainScreen : AppCompatActivity() {
 
@@ -19,32 +21,33 @@ class MainScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_screen)
 
-        navigationImagesMargin(binding.spBottomNavigation)
 
-        binding.spBottomNavigation.setOnNavigationItemSelectedListener { it->
-            binding.spBottomNavigation.post {
-                navigationImagesMargin(binding.spBottomNavigation)
+
+        val exploreFragment = ExploreFragment()
+        val groupsFragment = GroupsFragment()
+        val chatFragment = ChatFragment()
+        val profileFragment = ProfileFragment()
+
+
+        makeCurrentFragment(exploreFragment)
+
+        bottomNav.setOnNavigationItemSelectedListener {
+            when (it.itemId){
+                R.id.explorer -> makeCurrentFragment(exploreFragment)
+                R.id.groups -> makeCurrentFragment(groupsFragment)
+                R.id.chat -> makeCurrentFragment(chatFragment)
+                R.id.profile -> makeCurrentFragment(profileFragment)
             }
             true
         }
 
     }
 
-
-    private fun navigationImagesMargin(view: View) {
-        if (view is ViewGroup) {
-            for (i in 0 until view.childCount) {
-                val child = view.getChildAt(i)
-                navigationImagesMargin(child)
-            }
-        } else if (view is ImageView) {
-            val param = view.layoutParams as ViewGroup.MarginLayoutParams
-            param.topMargin = convertDpToPx(14)
-            view.layoutParams = param
+    private fun makeCurrentFragment(fragment: Fragment) =
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragmentContainerView, fragment)
+            commit()
         }
-    }
-    private fun convertDpToPx(dp: Int): Int {
-        return Math.round(dp * (resources.displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT))
-    }
+
 
 }

@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/botto_nav_background.xml" value="0.4197916666666667" />
         <entry key="app/src/main/res/drawable/btn_rectangle.xml" value="0.40520833333333334" />
         <entry key="app/src/main/res/drawable/checkbox.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/ic_explore.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/drawable/ic_facebook.xml" value="0.40520833333333334" />
         <entry key="app/src/main/res/drawable/ic_icon_google.xml" value="0.40520833333333334" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.4197916666666667" />
@@ -19,7 +20,7 @@
         <entry key="app/src/main/res/layout/fragment_explore.xml" value="0.38958333333333334" />
         <entry key="app/src/main/res/layout/fragment_groups.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/main_screen.xml" value="0.9" />
+        <entry key="app/src/main/res/layout/main_screen.xml" value="0.75" />
         <entry key="app/src/main/res/layout/sign_up.xml" value="0.33" />
         <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.4036458333333333" />
       </map>
