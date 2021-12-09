@@ -115,7 +115,7 @@
                     android:text="@string/reset_password"
                     android:textColor="@color/teal_700"
                     android:textSize="11sp"
-                    tools:ignore="OnClick,TextContrastCheck" />
+                    tools:ignore="OnClick,TextContrastCheck,UsingOnClickInXml,TouchTargetSizeCheck" />
 
             </LinearLayout>
 
@@ -128,7 +128,9 @@
                 android:layout_marginTop="43dp"
                 android:background="@drawable/btn_rectangle"
                 android:text="@string/login"
-                android:textSize="16sp" />
+                android:onClick="gotoHome"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -138,7 +140,8 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/sign_up_using"
                 android:textColor="@color/faint_color"
-                android:textSize="11sp" />
+                android:textSize="11sp"
+                tools:ignore="TextContrastCheck" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

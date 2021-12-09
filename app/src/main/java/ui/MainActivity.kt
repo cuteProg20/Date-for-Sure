@@ -10,10 +10,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
     }
 
     fun gotoSign(v: View) {
         val intent = Intent(this, SignUp::class.java)
+        startActivity(intent)
+    }
+
+    fun gotoHome(v: View) {
+        val intent = Intent(this, MainScreen::class.java)
         startActivity(intent)
     }
 }

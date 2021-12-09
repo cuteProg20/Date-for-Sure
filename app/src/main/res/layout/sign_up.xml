@@ -89,8 +89,10 @@
                 android:drawableStart="@drawable/ic_gender"
                 android:drawablePadding="20dp"
                 android:hint="@string/gender"
+                android:inputType="none"
                 android:padding="12dp"
-                android:textColorHint="@color/faint_color" />
+                android:textColorHint="@color/faint_color"
+                tools:ignore="Autofill" />
 
             <EditText
                 android:id="@+id/password"
@@ -100,21 +102,10 @@
                 android:background="@drawable/input_rectable"
                 android:drawableStart="@drawable/ic_password_key"
                 android:drawablePadding="20dp"
+                android:autofillHints="password"
                 android:hint="@string/password2"
                 android:inputType="textPassword"
-                android:padding="10dp" />
-
-            <EditText
-                android:id="@+id/conform_password"
-                android:layout_width="300dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="20sp"
-                android:background="@drawable/input_rectable"
-                android:drawableStart="@drawable/ic_password_key"
-                android:drawablePadding="20dp"
-                android:inputType="textPassword"
-                android:hint="@string/conform_password"
-                android:padding="10dp" />
+                android:padding="12dp" />
 
 
             <CheckBox
@@ -123,6 +114,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/checkBox_conditions"
                 android:textColor="@color/teal_700"
+                android:buttonTint="@color/teal_700"
                 />
 
             <Button
@@ -143,7 +135,8 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/log_in"
                 android:textColor="@color/teal_700"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                />
 
 
         </LinearLayout>
