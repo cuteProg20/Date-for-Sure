@@ -1,5 +1,6 @@
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:id="@+id/top_bar"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,5 +11,16 @@
     app:title=""
     app:titleMarginStart="100dp"
     android:background="@drawable/tool_bar_background">
+=======
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/NavigationTheme"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    app:menu="@menu/top_nav"
+    app:navigationIcon="@drawable/ic_smallicon"
+    tools:context=".MainActivity">
+>>>>>>> origin/master
 
 </androidx.appcompat.widget.Toolbar>
