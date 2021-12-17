@@ -102,8 +102,9 @@
                     android:layout_marginTop="22dp"
                     android:text="@string/register_here"
                     android:textColor="@color/purple_200"
+                    android:onClick="gotoSign"
                     android:textSize="11sp"
-                    tools:ignore="TextContrastCheck" />
+                    tools:ignore="OnClick,TextContrastCheck,TextContrastCheck,UsingOnClickInXml,TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -111,11 +112,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="125dp"
                     android:layout_marginTop="22dp"
-                    android:onClick="gotoSign"
                     android:text="@string/reset_password"
                     android:textColor="@color/teal_700"
                     android:textSize="11sp"
-                    tools:ignore="OnClick,TextContrastCheck,UsingOnClickInXml,TouchTargetSizeCheck" />
+                    />
 
             </LinearLayout>
 

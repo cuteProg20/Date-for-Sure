@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cardTitles">
+        <item>First Cube</item>
+        <item>Second Cube</item>
+        <item>Third Cube</item>
+        <item>Forth Cube</item>
+        <item>Fifth Cube</item>
+        <item>SixthCube</item>
+        <item>1st Cube</item>
+        <item>2nd Cube</item>
+        <item>3rd Cube</item>
+        <item>4th Cube</item>
+        <item>5th Cube</item>
+        <item>6th Cube</item>
+    </string-array>
+</resources>

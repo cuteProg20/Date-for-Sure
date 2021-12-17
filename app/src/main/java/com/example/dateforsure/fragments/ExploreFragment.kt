@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.dateforsure.R
+import kotlinx.android.synthetic.main.fragment_explore.*
+import model.GridItemAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,6 +31,15 @@ class ExploreFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        val cardTitle: Array<String>  = resources.getStringArray(R.array.cardTitles)
+        val cardImages: Array<String> = resources.getStringArray(R.array.cardImages)
+
+        val adapter = GridItemAdapter(cardTitle, cardImages)
+        val gridLayout = GridLayoutManager(this, 4)
+
+        gridItems.layoutManager = gridLayout
+        gridItems.adapter = adapter
     }
 
     override fun onCreateView(
