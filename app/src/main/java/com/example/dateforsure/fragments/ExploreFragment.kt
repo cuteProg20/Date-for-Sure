@@ -31,15 +31,6 @@ class ExploreFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-
-        val cardTitle: Array<String>  = resources.getStringArray(R.array.cardTitles)
-        val cardImages: Array<String> = resources.getStringArray(R.array.cardImages)
-
-        val adapter = GridItemAdapter(cardTitle, cardImages)
-        val gridLayout = GridLayoutManager(this, 4)
-
-        gridItems.layoutManager = gridLayout
-        gridItems.adapter = adapter
     }
 
     override fun onCreateView(
