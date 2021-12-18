@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.dateforsure.R
 import com.squareup.picasso.Picasso
 
-class GridItemAdapter (private val cardTitles : Array<String>, val cardImages: Array<String>) : RecyclerView.Adapter< GridItemAdapter.ViewHolder>(){
+class GridItemAdapter (private val cardTitles : Array<String>, private val cardImages: Array<String>) : RecyclerView.Adapter< GridItemAdapter.ViewHolder>(){
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
