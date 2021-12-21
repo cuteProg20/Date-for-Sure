@@ -4,15 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ui.SignUp"
     android:background="@drawable/ic_background_login">
-
-<!--    <ScrollView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -42,15 +35,17 @@
                 tools:layout_editor_absoluteX="194dp"
                 tools:layout_editor_absoluteY="167dp" />
 
-            <LinearLayout
-                android:id="@+id/nameContainer"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="170dp"
-                android:orientation="vertical">
+                app:boxStrokeWidth="0dp"
+                app:errorEnabled="true"
+                android:layout_marginTop="180dp"
+                app:hintAnimationEnabled="false">
 
-            <EditText
-                android:id="@+id/name"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
                 android:autofillHints="username"
@@ -59,36 +54,31 @@
                 android:drawablePadding="20dp"
                 android:ems="10"
                 android:hint="@string/name"
-                android:inputType="textEmailAddress"
+                app:boxStrokeWidthFocused="0dp"
+                android:inputType="textPersonName"
                 android:padding="12dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="2dp"
                 android:textColorHint="@color/faint_color"
                 tools:ignore="LabelFor,TextContrastCheck" />
 
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/required"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/required"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/error"
-                app:drawableStartCompat="@drawable/ic_error_circle" />
-            </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/emailContainer"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/useremailContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
         android:layout_marginTop="6dp"
-        android:orientation="vertical">
+        app:errorEnabled="true"
+        android:orientation="vertical"
+        app:hintAnimationEnabled="false">
 
-            <EditText
-                android:id="@+id/etEmail"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userEmail"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/input_rectable"
                 android:drawableStart="@drawable/ic_email"
                 android:drawablePadding="20dp"
@@ -102,28 +92,22 @@
                 android:textColorHint="@color/faint_color"
                 tools:ignore="LabelFor,TextContrastCheck" />
 
-            <TextView
-                android:id="@+id/requiredEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/required"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/error"
-                app:drawableStartCompat="@drawable/ic_error_circle" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/genderContainer"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usergenderContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:orientation="vertical">
-            <EditText
-                android:id="@+id/gender"
+        app:boxStrokeWidth="0dp"
+        app:errorEnabled="true"
+        android:orientation="vertical"
+        app:hintAnimationEnabled="false">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usergender"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/input_rectable"
                 android:drawableStart="@drawable/ic_gender"
                 android:drawablePadding="20dp"
@@ -132,28 +116,26 @@
                 android:padding="12dp"
                 android:textColorHint="@color/faint_color"
                 tools:ignore="Autofill" />
-            <TextView
-                android:id="@+id/requiredGender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/required"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/error"
-                app:drawableStartCompat="@drawable/ic_error_circle" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/passwordContainer"
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userpasswordContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:orientation="vertical">
+        app:boxStrokeWidth="0dp"
+        app:errorEnabled="true"
+        android:orientation="vertical"
+        app:hintAnimationEnabled="false">
 
-            <EditText
-                android:id="@+id/password"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userpassword"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/input_rectable"
                 android:drawableStart="@drawable/ic_password_key"
                 android:drawablePadding="20dp"
@@ -161,15 +143,8 @@
                 android:hint="@string/password2"
                 android:inputType="textPassword"
                 android:padding="12dp" />
-            <TextView
-                android:id="@+id/requiredPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/required"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/error"
-                app:drawableStartCompat="@drawable/ic_error_circle" />
-    </LinearLayout>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
             <CheckBox
                 android:id="@+id/checkBox"
@@ -206,6 +181,5 @@
 
         </LinearLayout>
 
-<!--    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,4 +26,5 @@
     <string name="profile">Profile</string>
     <string name="verification">VERIFICATION</string>
     <string name="resend"><u>Didn’t receive the code? Resend 45s</u></string>
+    <string name="required">Required to be filled</string>
 </resources>

@@ -11,4 +11,5 @@
 <!--    configured colors-->
 
     <color name="faint_color">#FFAAABAB</color>
+    <color name="error">#FFF57D8B</color>
 </resources>
