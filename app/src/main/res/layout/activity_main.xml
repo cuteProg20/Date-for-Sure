@@ -53,12 +53,24 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 tools:ignore="TextContrastCheck" />
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/usernamecontainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="168dp"
+    app:errorEnabled="true"
+    app:errorTextColor="@color/error"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    app:errorTextAppearance="@string/required"
+    app:errorIconDrawable="@drawable/ic_error_circle"
+    app:boxStrokeWidth="0dp"
+    app:boxStrokeWidthFocused="0dp">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="168dp"
                 android:autofillHints="username"
                 android:background="@drawable/input_rectable"
                 android:drawableStart="@drawable/ic_username2"
@@ -72,11 +84,26 @@
                 android:textColorHint="@color/faint_color"
                 tools:ignore="LabelFor,TextContrastCheck" />
 
-            <EditText
-                android:id="@+id/Password_login"
+</com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordcontainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:errorEnabled="true"
+                app:errorTextColor="@color/error"
+                android:animateLayoutChanges="false"
+                android:animationCache="false"
+                app:errorTextAppearance="@string/required"
+                app:errorIconDrawable="@drawable/ic_error_circle"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Passwordlogin"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="26dp"
                 android:background="@drawable/input_rectable"
                 android:drawableStart="@drawable/ic_password_lock"
                 android:drawablePadding="20dp"
@@ -89,6 +116,8 @@
                 android:paddingEnd="2dp"
                 android:textColorHint="@color/faint_color"
                 tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,7 +150,7 @@
 
 
             <Button
-                android:id="@+id/button_login"
+                android:id="@+id/buttonlogin"
                 android:layout_width="149dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -129,7 +158,6 @@
                 android:background="@drawable/btn_rectangle"
                 android:text="@string/login"
                 android:textSize="16sp"
-                android:onClick="gotoHome"
                 tools:ignore="UsingOnClickInXml" />
 
             <TextView
