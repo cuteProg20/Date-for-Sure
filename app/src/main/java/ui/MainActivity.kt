@@ -8,7 +8,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dateforsure.R
 import com.example.dateforsure.databinding.ActivityMainBinding
-import org.intellij.lang.annotations.Pattern
 
 
 class MainActivity : AppCompatActivity() {
@@ -69,10 +68,12 @@ class MainActivity : AppCompatActivity() {
         AlertDialog.Builder(this)
             .setTitle("Form submitted")
             .setMessage(message)
-            .setPositiveButton("Okay"){ _,_ ->
+            .setPositiveButton("Ok"){ _,_ ->
                 binding.username.text = null
                 binding.Passwordlogin.text = null
 
+                val intent = Intent(this, MainScreen::class.java)
+                      startActivity(intent)
 
                 binding.usernamecontainer.helperText = getString(R.string.required)
                 binding.passwordcontainer.helperText = getString(R.string.required)
@@ -81,7 +82,7 @@ class MainActivity : AppCompatActivity() {
             .show()
     }
 
-    fun usernameFocusChanger(){
+    private fun usernameFocusChanger(){
         binding.username.setOnFocusChangeListener{_, focused ->
             if (!focused){
                 binding.usernamecontainer.helperText = validateUsername()

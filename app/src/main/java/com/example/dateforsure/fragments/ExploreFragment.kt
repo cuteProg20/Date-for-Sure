@@ -1,5 +1,6 @@
 package com.example.dateforsure.fragments
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +26,8 @@ class ExploreFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+
+    @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -32,6 +35,14 @@ class ExploreFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
 
         }
+
+        val cardTitles : Array<String> = resources.getStringArray(R.array.cardTitles)
+        val cardImages : Array<String> = resources.getStringArray(R.array.cardImages)
+
+val adapter = GridItemAdapter(cardTitles, cardImages)
+        val gridlayout = GridLayoutManager(context!!, 3)
+       gridItems.layoutManager = gridlayout
+        gridItems.adapter = adapter
     }
 
     override fun onCreateView(
