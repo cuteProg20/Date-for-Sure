@@ -8,64 +8,65 @@
     android:background="@drawable/ic_background_sign">
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="93dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="93dp"
-            android:orientation="vertical"
-            android:layout_marginTop="40dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/robotoregular"
+            android:letterSpacing="0.15"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            tools:ignore="TextContrastCheck"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="167dp" />
 
-            <TextView
-                android:id="@+id/welcome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/robotoregular"
-                android:letterSpacing="0.15"
-                android:text="@string/welcome"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="26sp"
-                tools:ignore="TextContrastCheck"
-                tools:layout_editor_absoluteX="194dp"
-                tools:layout_editor_absoluteY="167dp" />
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/robotoregular"
+            android:letterSpacing="0.15"
+            android:paddingTop="5dp"
+            android:text="@string/log_in"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
 
-            <TextView
-                android:id="@+id/login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/robotoregular"
-                android:letterSpacing="0.15"
-                android:paddingTop="5dp"
-                android:text="@string/log_in"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                tools:ignore="TextContrastCheck" />
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/usernamecontainer"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="168dp"
-    app:errorEnabled="true"
-    app:errorTextColor="@color/error"
-    android:animateLayoutChanges="false"
-    android:animationCache="false"
-    app:errorTextAppearance="@string/required"
-    app:errorIconDrawable="@drawable/ic_error_circle"
-    app:boxStrokeWidth="0dp"
-    app:boxStrokeWidthFocused="0dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernamecontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="208dp"
+            android:animateLayoutChanges="false"
+            android:animationCache="false"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error_circle"
+            app:hintEnabled="false"
+            app:errorTextAppearance="@string/required"
+            app:errorTextColor="@color/error">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username"
@@ -84,21 +85,22 @@
                 android:textColorHint="@color/faint_color"
                 tools:ignore="LabelFor,TextContrastCheck" />
 
-</com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/passwordcontainer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:errorEnabled="true"
-                app:errorTextColor="@color/error"
-                android:animateLayoutChanges="false"
-                android:animationCache="false"
-                app:errorTextAppearance="@string/required"
-                app:errorIconDrawable="@drawable/ic_error_circle"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordcontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:animateLayoutChanges="false"
+            android:animationCache="false"
+            app:hintEnabled="false"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error_circle"
+            app:errorTextAppearance="@string/required"
+            app:errorTextColor="@color/error">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Passwordlogin"
@@ -117,84 +119,83 @@
                 android:textColorHint="@color/faint_color"
                 tools:ignore="TextContrastCheck" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/register_signup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:text="@string/register_here"
-                    android:textColor="@color/purple_200"
-                    android:onClick="gotoSign"
-                    android:textSize="11sp"
-                    tools:ignore="OnClick,TextContrastCheck,TextContrastCheck,UsingOnClickInXml,TouchTargetSizeCheck" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="125dp"
-                    android:layout_marginTop="22dp"
-                    android:text="@string/reset_password"
-                    android:textColor="@color/teal_700"
-                    android:textSize="11sp"
-                    />
-
-            </LinearLayout>
-
-
-            <Button
-                android:id="@+id/buttonlogin"
-                android:layout_width="149dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="43dp"
-                android:background="@drawable/btn_rectangle"
-                android:text="@string/login"
-                android:textSize="16sp"
-                tools:ignore="UsingOnClickInXml" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/register_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="24dp"
-                android:text="@string/sign_up_using"
-                android:textColor="@color/faint_color"
+                android:layout_marginTop="22dp"
+                android:onClick="gotoSign"
+                android:text="@string/register_here"
+                android:textColor="@color/purple_200"
                 android:textSize="11sp"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="OnClick,TextContrastCheck,TextContrastCheck,UsingOnClickInXml,TouchTargetSizeCheck" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp">
-
-                <ImageView
-                    android:id="@+id/google"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_icon_google"
-                    android:contentDescription="@string/app_name" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="45dp"
-                    android:src="@drawable/ic_facebook"
-                    android:contentDescription="@string/facebook"/>
-
-            </LinearLayout>
-
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/reset_password"
+                android:textColor="@color/teal_700"
+                android:textSize="11sp" />
 
         </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonlogin"
+            android:layout_width="149dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/btn_rectangle"
+            android:text="@string/login"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="@string/sign_up_using"
+            android:textColor="@color/faint_color"
+            android:textSize="11sp"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_icon_google" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:contentDescription="@string/facebook"
+                android:src="@drawable/ic_facebook" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

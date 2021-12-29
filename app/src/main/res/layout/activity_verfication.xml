@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/ic_background_login"
     android:layout_height="match_parent"
+    tools:viewBindingIgnore="true"
     tools:context="ui.VerificationActivity">
 
   <LinearLayout
@@ -63,63 +64,69 @@
       android:id="@+id/Verify_number1"
       android:layout_width="40dp"
       android:layout_height="40dp"
+      android:textAlignment="center"
+      android:background="@drawable/verfication_box"
       android:inputType="number"
       android:maxLength="1"
-      android:background="@drawable/verfication_box"
-      tools:ignore="Autofill,LabelFor" />
+      tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
   <EditText
       android:id="@+id/Verify_number2"
       android:layout_width="40dp"
       android:layout_height="40dp"
       android:layout_marginStart="10dp"
+      android:textAlignment="center"
+      android:background="@drawable/verfication_box"
       android:inputType="number"
       android:maxLength="1"
-      android:background="@drawable/verfication_box"
-      tools:ignore="Autofill,LabelFor" />
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <EditText
       android:id="@+id/Verify_number3"
       android:layout_width="40dp"
       android:layout_height="40dp"
       android:layout_marginStart="10dp"
+      android:textAlignment="center"
+      android:background="@drawable/verfication_box"
       android:inputType="number"
       android:maxLength="1"
-      android:background="@drawable/verfication_box"
-      tools:ignore="Autofill,LabelFor" />
+      tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
   <EditText
       android:id="@+id/Verify_number4"
       android:layout_width="40dp"
       android:layout_height="40dp"
       android:layout_marginStart="10dp"
-      android:inputType="number"
-      android:maxLength="1"
+      android:textAlignment="center"
       android:background="@drawable/verfication_box"
       android:importantForAutofill="no"
-      tools:ignore="LabelFor" />
+      android:inputType="number"
+      android:maxLength="1"
+      tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
   <EditText
       android:id="@+id/Verify_number5"
       android:layout_width="40dp"
       android:layout_height="40dp"
       android:layout_marginStart="10dp"
-      android:inputType="number"
-      android:maxLength="1"
+      android:textAlignment="center"
       android:background="@drawable/verfication_box"
       android:importantForAutofill="no"
-      tools:ignore="LabelFor" />
+      android:inputType="number"
+      android:maxLength="1"
+      tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <EditText
       android:id="@+id/Verify_number6"
       android:layout_width="40dp"
       android:layout_height="40dp"
       android:layout_marginStart="10dp"
-      android:inputType="number"
-      android:maxLength="1"
+      android:textAlignment="center"
       android:background="@drawable/verfication_box"
       android:importantForAutofill="no"
-      tools:ignore="LabelFor" />
+      android:inputType="number"
+      android:maxLength="1"
+      tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </LinearLayout>
 

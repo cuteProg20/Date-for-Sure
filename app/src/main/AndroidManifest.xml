@@ -26,6 +26,10 @@
         <activity
             android:name="ui.SignUp"
             android:exported="false" />
+
+        <activity
+            android:name="ui.VerificationActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
