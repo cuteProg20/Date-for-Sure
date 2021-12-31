@@ -7,18 +7,24 @@
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/email_active_input.xml" value="0.22083333333333333" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/ic_account.xml" value="0.22083333333333333" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/ic_email.xml" value="0.22083333333333333" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/ic_error_circle.xml" value="0.22083333333333333" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/ic_logo.xml" value="0.22083333333333333" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/ic_logo2.xml" value="0.22083333333333333" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/ic_pic_edit.xml" value="0.20677083333333332" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/icon_input_selector.xml" value="0.22083333333333333" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/image_background.xml" value="0.22083333333333333" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/input_rectable.xml" value="0.22083333333333333" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/item_selector.xml" value="0.22083333333333333" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/drawable/verfication_box.xml" value="0.20677083333333332" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/activity_verfication.xml" value="0.2046875" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/app_top_bar.xml" value="0.1" />
-        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/fragment_explore.xml" value="0.1" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/fragment_chat.xml" value="0.2046875" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/fragment_explore.xml" value="0.22" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/fragment_groups.xml" value="0.2046875" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/grid_item_view.xml" value="0.2046875" />
-        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/main_screen.xml" value="0.18" />
+        <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/main_screen.xml" value="0.25" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/layout/sign_up.xml" value="0.25" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/menu/top_nav.xml" value="0.2046875" />
         <entry key="..\:/Dlp-main/Date-for-Sure/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22083333333333333" />

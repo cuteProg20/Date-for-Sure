@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         AlertDialog.Builder(this)
             .setTitle("Invalid Form")
             .setMessage(message)
-            .setPositiveButton("Okay"){ _,_ ->
+            .setPositiveButton("Ok"){ _,_ ->
                 // do nothing
             }
             .show()
